@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/White"
+    android:clickable="true"
+    android:focusable="true"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:paddingTop="0dp">
+
+    <RelativeLayout
+        android:id="@+id/linearl"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/rowHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/messageTextView"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingEnd="7dp"
+            android:paddingStart="0dp"
+            android:text="@string/rowheader"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/darkestText"
+            android:textSize="18sp"
+            android:layout_alignTop="@+id/profilePicture"
+            android:layout_toStartOf="@+id/downArrowButton" />
+
+        <!--<TextView-->
+        <!--android:text="userTextView"-->
+        <!--android:id="@+id/userTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toLeftOf="@+id/lastActivityTextView"-->
+        <!--android:layout_toRightOf="@id/profilePicture"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:ellipsize="end"-->
+        <!--android:lines="1"-->
+        <!--android:layout_below="@+id/rowHeader"-->
+        <!--android:textColor="@color/middleText" />-->
+
+        <TextView
+            android:id="@+id/lastChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowHeader"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/profilePicture"
+            android:layout_toStartOf="@id/lastActivityTextView"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/no_subchats_yet"
+            android:textColor="@color/lightestText"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/messageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastChat"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/profilePicture"
+            android:layout_toStartOf="@+id/lastActivityTextView"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/no_messages_yet"
+            android:textColor="@color/lightestText"
+            />
+
+        <TextView
+            android:id="@+id/lastActivityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rowHeader"
+            android:layout_alignParentEnd="true"
+            android:textColor="#7c7c7c"
+            />
+
+        <Button
+            android:id="@+id/downArrowButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="50dp"
+            android:layout_alignParentEnd="true"
+            android:padding="60dp"
+            android:layout_toLeftOf="@+id/unreadDot"
+            android:layout_alignTop="@id/lastActivityTextView"
+            android:layout_toStartOf="@+id/unreadDot"
+            android:background="@drawable/ic_arrow_drop_down_black_24dp"
+            android:backgroundTint="@color/instabug_annotation_color_gray"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/unreadDot"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/unread_dot"
+            android:gravity="center"
+            android:text="@string/unread_count"
+            android:textColor="@color/White"
+            android:textSize="12sp"
+            android:layout_alignBottom="@+id/messageTextView"
+            android:layout_alignParentEnd="true"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/gridView_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+        <!--android:layout_gravity="center">-->
+        <!--android:layout_above="@+id/recyclerView"-->
+        <!--android:layout_alignEnd="@+id/recyclerView"-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gridView"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.3"
+        android:background="@color/instabug_annotation_color_gray"
+        android:paddingEnd="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingStart="20dp"/>
+
+</LinearLayout>

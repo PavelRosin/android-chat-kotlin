@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="header_color_new_design" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/header_new_color</item>
+        <item name="colorPrimaryDark">@color/Header</item>
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_animation_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_animation_exit</item>
+    </style>
+
+    <style name="MyTabStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+
+</resources>

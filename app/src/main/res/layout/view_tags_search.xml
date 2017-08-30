@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/view_tags_frame"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/tag_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_tag_button"
+        android:padding="5dp"
+        android:paddingEnd="15dp"
+        android:text="@string/tag_placeholder"
+        android:textColor="@color/tags_red"
+        android:textSize="17dp"
+        />
+</FrameLayout>

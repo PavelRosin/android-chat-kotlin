@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#488BAA">
+
+    <RelativeLayout
+        android:id="@+id/class_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/class_announcement_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/announcement"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/White" />
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/class_announcement_notification"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/unread_dot"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/class_announcement_text"
+            android:background="@color/White"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/class_lecture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/class_lecture_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/lecture"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/White" />
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/class_lecture_notification"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/unread_dot"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/class_lecture_text"
+            android:background="@color/White"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/class_bot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/class_bot_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/bot"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/White" />
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/class_bot_notification"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/unread_dot"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_below="@id/class_bot_text"-->
+            <!--android:background="@color/White"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

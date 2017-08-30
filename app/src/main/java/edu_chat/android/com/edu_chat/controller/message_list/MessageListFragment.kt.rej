@@ -1,0 +1,9 @@
+diff a/app/src/main/java/edu_chat/android/com/edu_chat/controller/message_list/MessageListFragment.kt b/app/src/main/java/edu_chat/android/com/edu_chat/controller/message_list/MessageListFragment.kt	(rejected hunks)
+@@ -462,6 +462,7 @@
+  
+  		this.bot_icon!!.setOnClickListener {
+  			if (subChats == null) {
+++<<<<<<< HEAD
+ +				//val progress = indeterminateProgressDialog("Fetching subchats")
+ +				//progress.show()
+ +				ChatApi().chatListAsync(null, null, null, null, null, null, chat!!.id, null, null, object : ApiCallback<ChatListCreateView> {

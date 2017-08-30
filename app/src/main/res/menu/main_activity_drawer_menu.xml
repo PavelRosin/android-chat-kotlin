@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Profile"/>
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_starred"
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="Starred"/>
+    </group>
+
+    <!--<item-->
+    <!--android:id="@+id/nav_digital_office_hours"-->
+    <!--android:icon="@drawable/educhat"-->
+    <!--android:title="Digital Office Hours" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_invite"-->
+    <!--android:icon="@drawable/educhat"-->
+    <!--android:title="Invite" />-->
+
+    <!--<menu>-->
+    <group android:id="@+id/group3">
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_flag_black_24dp"
+            android:title="@string/help_and_feedback"/>
+        <item
+            android:id="@+id/nav_privacy"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="@string/nav_privacy"/>
+        <item
+            android:id="@+id/nav_acknowledgement"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="@string/nav_acknowledgement"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings"/>
+        <!--<item-->
+            <!--android:id="@+id/nav_logout"-->
+            <!--android:icon="@drawable/educhat"-->
+            <!--android:title="Log Out"/>-->
+    </group>
+
+</menu>
+
+    <!--<item android:title="">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_settings"-->
+    <!--android:icon="@drawable/educhat"-->
+    <!--android:title="Settings"-->
+    <!--/>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_feedback"-->
+    <!--android:icon="@drawable/educhat"-->
+    <!--android:title="Feedback" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_logout"-->
+    <!--android:icon="@drawable/educhat"-->
+    <!--android:title="Log Out" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+    <!--</menu>-->

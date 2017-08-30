@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu_chat.android.com.edu_chat.controller.invite.InviteActivity">
+
+    <include
+        android:id="@+id/inviteToolBar"
+        layout="@layout/invite_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Join link"
+            android:textColor="#8A000000"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <EditText
+                android:id="@+id/linkEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="8"
+                android:background="@drawable/invite_edit_text_style1"
+                android:inputType="textUri"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="http://edu.chat/join/1"
+                android:textColor="#4a90e2"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="7.5dp"
+            android:text="invite people to chat "
+            android:textColor="#8A000000"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/search_bar_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/invite_edit_text_style2"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="11dp"
+            android:drawableRight="@drawable/broadcast"
+            android:hint="Search or type email"
+            android:paddingBottom="15dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="6dp"
+            android:paddingTop="17dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textColor="@color/Black"/>
+
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/invite_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="10dp"
+        android:horizontalSpacing="1dp"
+        android:numColumns="auto_fit"
+        android:overScrollMode="ifContentScrolls"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:stretchMode="columnWidth"
+        android:fadeScrollbars="false"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_user_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarFadeDuration="0">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="chat.edu.edu_chat">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+
+    <application
+        android:name="edu_chat.android.com.edu_chat.App"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/educhat"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:windowSoftInputMode="stateVisible|adjustResize"
+        tools:targetApi="honeycomb">
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.chat_list.splash_screen_activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design">
+        </activity>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.forgotpassword.Forgotpassword"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"/>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.chat_list.ChatListActivity"
+            android:label=""
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"
+            android:windowSoftInputMode="adjustResize"
+            tools:targetApi="cupcake">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.message_list.MessageListActivity"
+            android:label=""
+            android:theme="@style/header_color_new_design"
+            android:windowSoftInputMode="adjustPan"
+            tools:targetApi="cupcake">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:screenOrientation="portrait"
+                android:value="edu_chat.android.com.edu_chat.controller.chat_list.ChatListActivity"/>
+        </activity>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.chat_create.CreateChatActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"
+            android:windowSoftInputMode="adjustResize"
+            tools:targetApi="cupcake"/>
+        <!--
+              ATTENTION: This was auto-generated to add Google Play services to your project for
+            App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.userprofile.UserProfileActivity"
+            android:label=""
+            android:parentActivityName="edu_chat.android.com.edu_chat.controller.chat_list.ChatListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"
+            android:windowSoftInputMode="stateHidden"
+            tools:targetApi="jelly_bean"/>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.invite.InviteActivity"
+            android:label=""
+            android:parentActivityName="edu_chat.android.com.edu_chat.controller.chat_list.ChatListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"
+            tools:targetApi="jelly_bean"/>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.settings.SettingsActivity"
+            android:label=""
+            android:parentActivityName="edu_chat.android.com.edu_chat.controller.chat_list.ChatListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"
+            tools:targetApi="jelly_bean"/>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.signup.SignUpActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"/>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.chat_info.ChatInfoInviteUser"
+            android:label=""
+            android:parentActivityName="edu_chat.android.com.edu_chat.controller.chat_info.ChatinfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"
+            tools:targetApi="jelly_bean"/>
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.chat_info.ChatinfoActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="chat.edu.android.com.edu_chat.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/image_path"/>
+        </provider>
+
+
+        <activity
+            android:name="edu_chat.android.com.edu_chat.controller.userprofile.AddingTagsActivity"
+            android:label=""
+            android:parentActivityName="edu_chat.android.com.edu_chat.controller.userprofile.UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/header_color_new_design"
+            tools:targetApi="jelly_bean"/>
+
+        <service android:name="edu_chat.android.com.edu_chat.controller.MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name="edu_chat.android.com.edu_chat.controller.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

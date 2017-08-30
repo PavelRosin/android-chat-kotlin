@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="edu_chat.android.com.edu_chat.controller.chat_list.ChatListFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/White"
+            android:orientation="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0">
+
+            <LinearLayout
+                android:id="@+id/longLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/White"
+                android:orientation="vertical">
+
+
+                <!--<TextView-->
+                <!--android:id="@+id/chatsText2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:text="@string/chats"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/chatsList2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/moreChats"
+                    android:text="See More"
+                    android:clickable="true"
+                    android:textColor="@color/header_new_color"
+                    />
+
+                <!--<TextView-->
+                <!--android:id="@+id/broadcastsText2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="16dp"-->
+                <!--android:text="@string/broadcasts"-->
+                <!--android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+                <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/broadcastsList2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:nestedScrollingEnabled="false" />-->
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

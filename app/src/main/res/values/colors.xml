@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="toolbarBlack">#1a495e</color>
+    <color name="toolbarBlackTransparent">#80333333</color>
+    <color name="background">#e5e5e5</color>
+    <color name="darkestText">#333333</color>
+    <color name="middleText">#595959</color>
+    <color name="lightestText">#8b8b8b</color>
+    <color name="blueRow">#408bc1</color>
+    <color name="loginbuttoncolor">#2196f3</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Dark">#565656</color>
+    <color name="text_hint_color">#4a90e2</color>
+    <color name="Header">#1a495e</color>
+    <color name="header_new_color">#285b7d</color>
+    <color name="accent_material_light">#ffcb48</color>
+    <color name="tags_red">#ffe03136</color>
+</resources>

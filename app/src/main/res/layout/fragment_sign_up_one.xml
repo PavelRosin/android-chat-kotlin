@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="edu_chat.android.com.edu_chat.controller.signup.SignUpOneFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/choose_account_type"
+        android:textColor="@color/Black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/faculty_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/sign_up_option_border"
+        android:gravity="center|center_vertical"
+        android:padding="10dp"
+        android:text="@string/faculty"
+        android:textColor="@color/Black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/student_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/sign_up_option_border"
+        android:gravity="center|center_vertical"
+        android:padding="10dp"
+        android:text="@string/student"
+        android:textColor="@color/Black"
+        android:textSize="20sp"/>
+
+</LinearLayout>

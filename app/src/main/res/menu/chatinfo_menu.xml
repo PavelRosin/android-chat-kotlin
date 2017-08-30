@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chatInfo_editname"
+        android:title="Edit chat name"/>
+    <item
+        android:id="@+id/chatInfo_notifications"
+        android:title="@string/notifications"/>
+    <item
+        android:id="@+id/chatInfo_leavechat"
+        android:title="@string/leave_the_chat"/>
+    <item
+        android:id="@+id/chatInfo_deletechat"
+        android:title="delete the chat"/>
+
+</menu>

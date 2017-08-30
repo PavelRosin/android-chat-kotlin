@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#e5e5e5"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="-60dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightbubblecopy"
+            android:overScrollMode="ifContentScrolls"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/username"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:text="@string/sendername_in_right_bubble"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/username"
+                android:paddingLeft="5dp"
+                android:text="@string/message_in_right_bubble"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:id="@+id/file_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/message"
+                android:layout_below="@+id/message"
+                android:src="@drawable/ic_insert_drive_file_black_24dp"/>
+
+            <TextView
+                android:id="@+id/filename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message"
+                android:layout_toEndOf="@+id/file_icon"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="8dp"
+                android:text="@string/file_name"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/filename"
+                android:layout_below="@+id/filename"
+                android:paddingLeft="5dp"
+                android:text="@string/size"
+                android:textColor="#D3D3D3"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filename"
+                android:layout_toEndOf="@+id/size_text"
+                android:paddingLeft="1dp"
+                android:paddingRight="10dp"
+                android:text="@string/size_of_file"
+                android:textColor="#D3D3D3"
+                android:textSize="12sp"/>
+
+            <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id= "@+id/chatButton"-->
+            <!--android:text= "Comments"-->
+            <!--android:layout_below="@+id/file_icon"/>-->
+            <TextView
+                android:id="@+id/comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/file_icon"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp"
+                android:text="View comments"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/userProfilePicture"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="7dp"
+            android:contentDescription="@string/user_profile_picture_content_description"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/messageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="@string/message_sent_time"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@android:color/black"
+        android:visibility="gone"/>
+</LinearLayout>
+

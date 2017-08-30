@@ -1,0 +1,66 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="edu_chat.android.com.edu_chat.controller.settings.SettingsAbout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_settings_about"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="0dp"
+            android:background="@color/Black">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/about"
+                android:textColor="@color/White"
+                android:textSize="20dp"/>
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="1in"
+            android:layout_height="1in"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/logo_white"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/app_name"
+                android:textColor="@color/Black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/build_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textColor="@color/Black"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

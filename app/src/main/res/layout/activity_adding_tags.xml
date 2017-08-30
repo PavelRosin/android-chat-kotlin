@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="edu_chat.android.com.edu_chat.controller.userprofile.AddingTagsActivity"
+    android:id="@+id/tags_root_layout">
+
+    <TextView
+        android:id="@+id/search_prompt_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/appBar"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"
+        android:text="@string/click_on_your_interests_to_add_a_tag"
+        android:textSize="17dp"
+        />
+
+    <!--TODO Display the tag options using search_tag_button.xml and search_tag_button_selected.xml for the views-->
+
+    <FrameLayout
+        android:id="@+id/tags_recycler_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_below="@id/search_prompt_tags"
+        />
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/adding_tags_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/header_new_color">
+        </android.support.v7.widget.Toolbar>
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/searchview_add_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/adding_tags_toolbar"
+            android:background="@null"
+            android:hint="@string/search_a_tag"
+            android:singleLine="true"
+            android:textColor="#b7b7b7"
+            android:textColorHint="#b7b7b7"
+            android:textSize="17dp"
+            />
+        <TextView
+            android:id="@+id/save_tag_choices_button"
+            android:text="@string/save_normal"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:fontFamily="Roboto"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>

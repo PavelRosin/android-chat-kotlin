@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/horizontal_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayoutGrid"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#f00"
+                android:padding="10dp"
+                android:shape="oval"
+                android:text="Button 1"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#0f0"
+                android:padding="10dp"
+                android:shape="oval"
+                android:text="Button 2"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#00f"
+                android:padding="10dp"
+                android:shape="oval"
+                android:text="Button 3"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#ff0"
+                android:padding="10dp"
+                android:shape="oval"
+                android:text="Button 4"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#f0f"
+                android:padding="10dp"
+                android:shape="oval"
+                android:text="Button 5"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#f90"
+                android:padding="10dp"
+                android:shape="oval"
+                android:text="Button 6"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#f00"
+                android:padding="10dp"
+                android:shape="oval"
+                android:text="Button 7"
+                android:textColor="#ff9"
+                android:textSize="20sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="#444"
+                android:padding="10dp"
+                android:shape="oval"
+                android:text="Button 8"
+                android:textColor="#fff"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

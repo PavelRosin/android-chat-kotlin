@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:fab="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="edu_chat.android.com.edu_chat.controller.chat_info.PlannerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/eventslistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        fab:borderWidth="3dp"
+        fab:fab_colorNormal="#303030"
+        fab:fab_colorPressed="#000000"
+        fab:fab_icon="@drawable/broadcast"
+        fab:fab_title="Broadcast"/>
+</FrameLayout>

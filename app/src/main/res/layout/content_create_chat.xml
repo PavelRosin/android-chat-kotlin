@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:nestedScrollingEnabled="true"
+    tools:context="edu_chat.android.com.edu_chat.controller.chat_create.CreateChatActivity"
+    tools:showIn="@layout/activity_create_chat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/newchat_image_frame"
+                android:layout_width="136dp"
+                android:layout_height="136dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="12dp"
+                        app:cardCornerRadius="68dp"
+                        android:innerRadius="18dp"
+                        android:backgroundTint="#C4C4C4"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9">
+
+                        <ImageView
+                            android:id="@+id/newchat_image"
+                            android:layout_width="96dp"
+                            android:layout_height="96dp"
+                            android:layout_gravity="center"
+                            android:background="#C4C4C4"
+                            android:src="@drawable/ic_group_white_24dp"/>
+                    </android.support.v7.widget.CardView>
+
+                </FrameLayout>
+
+
+                <ImageView
+                    android:id="@+id/photo_button"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom|end"
+                    android:src="@drawable/edit_profile_button"/>
+
+            </FrameLayout>
+
+
+
+            <!--<ImageView-->
+            <!--android:layout_width="136dp"-->
+            <!--android:layout_height="136dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:src="@drawable/contact_pic_classmore_than_one"/>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/chat_name_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/Black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Black"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.3"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/course_code_editText_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/course_code_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/course_code"
+                    android:maxLength="21"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/Black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/Black"
+                    android:layout_marginTop="10dp"
+                    android:alpha="0.3"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/required_field_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/required_fields"
+                />
+
+
+            <LinearLayout
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/switch_open"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/switch_open"
+                    android:textColor="@color/White"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:background="#549788"
+                    android:paddingTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/switch_closed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/switch_closed"
+                    android:textSize="16sp"
+                    android:textColor="#549788"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/create_chat_switch_background"
+                    android:paddingTop="10dp"/>
+
+                <!--<ToggleButton-->
+                <!--android:id="@+id/toggle_button1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:disabledAlpha="0.3"-->
+                <!--android:textOff="@string/open"-->
+                <!--android:textOn="@string/open"-->
+                <!--/>-->
+
+                <!--<ToggleButton-->
+                <!--android:id="@+id/toggle_button2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:disabledAlpha="0.3"-->
+                <!--android:textOff="@string/closed"-->
+                <!--android:textOn="@string/closed"-->
+                <!--/>-->
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:alpha="0.7"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/toggle_closed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/chat_closed"
+                    android:textSize="16sp"
+                    />
+
+                <TextView
+                    android:id="@+id/toggle_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/chat_open"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:orientation="vertical">-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Cannot contain spaces or periods"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/chat_name_count_textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:text="0/21"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/chat_description_count_textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:text="0/140"/>-->
+
+        <!--</RelativeLayout>-->
+
+        <!--</LinearLayout>-->
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/chat_tags_textView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/chat_tags"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/chat_subject_editText"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/chat_tags_hint"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Maximum of five tags"-->
+
+        <!--/>-->
+
+        <!--<Switch-->
+        <!--android:id="@+id/public_switch"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:checked="true"-->
+        <!--android:text="@string/public_string"-->
+        <!--/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="32dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/chat_users_textView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/chat_description"/>-->
+
+        <!--<EditText-->
+        <!--android:id="@+id/chat_users_editText"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/enter_the_names_of_the_users_to_add"-->
+        <!--android:maxLength="140"/>-->
+
+
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

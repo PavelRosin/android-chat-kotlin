@@ -1,0 +1,126 @@
+
+Version 0.5 (1)
+	11/23/15 @niebloomj
+	-Created documentation folder
+	-Created the changelog
+	-Made example changelog messages
+	11/23/15 @kai
+	-Send messages complete
+	-Loading chats complete
+	-View your "buddy list" complete
+
+Version 0.5 (2)
+	11/23/15 @niebloomj
+	-Installed and Implemented Instabug bug reporting
+	-Logging device information to mobile server about device specific information on login.
+	11/23/15 @Kai
+	-Changed settingsIcon PNG to correct naming so application would build.
+	-Added and fixed layouts for MainActivity.
+	-Loaded profile picture of ECCurrentUser and added current user school to load. 
+	11/24/15 @niebloomj
+	-Implemented proper ECApiManager pattern for @Kai to follow.
+	11/24/15 @Kai
+	-Implemented ECApiManager for all AsyncHttpClient related activities.
+	11/25/15 @Kai
+	-Added icon to action bar
+	-Added settings menu to top of action bar.
+	-Added custom layout to center align the edu chat icon
+	-Implemented logout.
+	11/29/15 @Kai
+	-Custom chat action bar implemented
+	-Added settings menu to ChatActivity
+	-Fixed layout with chat message items.
+	-ViewPager added back in.
+	1/6/16 @Kai
+	-Socket IO working with receiving custom user messages. Will need to look into receiving messages for classes/departments
+	-Fixed layout issues with the ChatActivity
+	-Material Design on EditText of the Login Screen.
+	1/9/2016 @Kai
+	-Fixed some layout issues with the chat.
+	- Fixed time zones so now properly displays time of messages.
+	1/12/2016 @Kai
+	-Material Design ToolBar
+	-Added v21 layouts for different layouts.
+	-KitKat supported via Cardview.
+
+	1/19/2016 @Kai
+	-Subchannels working.
+	-Socket onDestroy called to make sure only one instance of socket is running at a time.
+
+
+Version 0.5.3 (8)
+	-Changelog completely missing
+
+#Version 0.5.3.1
+
+##Build 9
+
+###6/10/16
+	@Yuanda
+	- After logging in, clicking on back button will not return to the login page
+	- Add new items on menu
+	- Removed the gap between dates and messages on chat page
+	- After clicking logout menu, it will not automatically login again
+
+###6/13/16
+    @Yuanda
+	- Modified the wrong method and made it correctly separate different dates on chat page
+    @Muthukumaran PK
+    - Modified the interface of Main chat
+
+###6/14/16
+    @Muthukumaran PK
+    - Made the scrolling static in the Main chat
+    @Yuanda
+    - Removed the gap between items on main page
+
+#Version 0.5.4
+
+##Build 10
+
+###6/15/16
+    @Kiran
+    - Fixed the issue with the same overflow menu showing on all the pages
+    - Fixed the ECMessage to Date cast Exception
+    @Muthukumaran PK
+    - Finished the tests for ECMessage
+    - Finished the tests for ECSubchat
+    @Yuanda
+    - Finished the Unit Tests for ApiManager
+    - Replace the wrong algorithm with the correct one to separate messages sent on different days
+    - Fixed bugs that caused huge gaps between people items on main screen
+###6/16/16
+    @Kiran
+    - Modified the combinedlogin.xml to include the signup button
+    - Written Tests for ECObject and ECUser
+    @Muthukumaran PK
+    - Finished the tests for ECCategory
+    @Yuanda
+    - Fixed NullPointerException
+    - Fixed TextView.setText(java.lang.CharSequence)
+###6/21/16
+     @Kiran
+     - Check for wrong login/password, snackbar is shown
+     @Yuanda
+     - Make group chat properly displayed
+ ###6/22/16
+     @Kiran
+    - Added a cross mark beside the username and password to clear the text
+    @Yuanda
+    - Change main activity layout component to make all chat display
+    - Fix UI
+###6/23/16
+     @Kiran
+     - Setup a hamburger menu drawer in the main activity
+     @Yuanda
+     - Solved git problem
+     - Add chat info menu
+     - Make subchat list work
+     - Deprecate Subchat.java
+###6/24/16
+    @Yuanda
+    - Fixed bugs on ChatActivity
+    - Add Chat info activity
+    - Add Tab views on chat info
+    @Kiran
+    - The password field is set to empty when it is entered incorrectly

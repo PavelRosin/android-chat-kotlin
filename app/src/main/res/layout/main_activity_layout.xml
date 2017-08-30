@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_new"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="edu_chat.android.com.edu_chat.controller.chat_list.ChatListActivity"
+    tools:openDrawer="start">
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--The tab&notification setting-->
+        <RelativeLayout
+            android:id="@+id/tab_classes_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/tab_classes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/classes"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notification_one"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/tab_classes"
+                android:src="@drawable/unread_dot" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tab_chats_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/tab_chats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingEnd="5dp"
+                android:paddingStart="5dp"
+                android:text="@string/chats"
+                android:textColor="@color/White"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/notification_two"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/tab_chats"
+                android:src="@drawable/unread_dot" />
+
+        </RelativeLayout>
+
+        <!--The main bar-->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background">
+
+            <RelativeLayout
+                android:id="@+id/main_bar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/colorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/hamburger_menu"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/ic_menu_white_24dp" />
+                <ImageView
+                    android:id="@+id/ios_logo_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ios_logo_header"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                     />
+
+
+
+                <ImageView
+                    android:id="@+id/searchbutton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:paddingEnd="5dp"
+                    android:src="@drawable/ic_action_action_search" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/main_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="50dp"
+                android:paddingEnd="50dp"
+                android:background="?attr/colorPrimary"
+                android:layout_below="@id/main_bar">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/colorPrimary"
+                    android:theme="@style/header_color_new_design" />
+
+            </RelativeLayout>
+
+
+            <!--The viewpager-->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/main_bar2" />
+
+            <!--The message when no classes or chats-->
+            <FrameLayout
+                android:id="@+id/main_no_chats_frame"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/main_bar2">
+
+                <LinearLayout
+                    android:id="@+id/main_no_chats"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/no_chats_yet"
+                        android:textColor="#95989A"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/no_chats_yet_description"
+                        android:textColor="#95989A"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/main_no_classes_frame"
+                android:layout_below="@+id/main_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:id="@+id/main_no_classes"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/no_classes_yet"
+                        android:textColor="#95989A"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/main_no_classes_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/no_classes_yet_description"
+                        android:textColor="#95989A"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <!--The adding button-->
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/floatingActionsMenuTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                fab:fab_addButtonColorNormal="#0F5C80"
+                fab:fab_addButtonColorPressed="#32ACE7"
+                fab:fab_addButtonPlusIconColor="@color/White"
+                fab:fab_labelStyle="@style/menu_labels_style">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/create_class_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_class"
+                    app:backgroundTint="@color/Header"
+                    fab:borderWidth="0dp"
+                    fab:fab_colorNormal="#0F5C80"
+                    fab:fab_colorPressed="#32ACE7"
+                    fab:fab_title="Classes"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/create_chat_fab1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_chat"
+                    app:backgroundTint="@color/Header"
+                    fab:fab_colorNormal="#0F5C80"
+                    fab:fab_colorPressed="#32ACE7"
+                    fab:fab_title="Chats"
+
+                    />
+
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+            <!--<com.getbase.floatingactionbutton.FloatingActionsMenu-->
+            <!--android:id="@+id/floatingActionsMenuStudentMainTest"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_gravity="bottom|right"-->
+            <!--android:layout_margin="16dp"-->
+            <!--fab:fab_addButtonColorNormal="#0F5C80"-->
+            <!--fab:fab_addButtonColorPressed="#32ACE7"-->
+            <!--fab:fab_addButtonPlusIconColor="@color/White"-->
+            <!--fab:fab_labelStyle="@style/menu_labels_style">-->
+
+
+            <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
+            <!--android:id="@+id/create_chat_fab_student"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/new_class"-->
+            <!--android:src="@drawable/new_chat"-->
+            <!--app:backgroundTint="@color/Header"-->
+            <!--fab:borderWidth="3dp"-->
+            <!--fab:fab_colorNormal="#0F5C80"-->
+            <!--fab:fab_colorPressed="#32ACE7"-->
+            <!--fab:fab_title="Chats"-->
+            <!--/>-->
+
+            <!--</com.getbase.floatingactionbutton.FloatingActionsMenu>-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/create_chat_fab_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                app:backgroundTint="#005C82"
+                android:src="@drawable/ic_add_white_24dp"
+                app:useCompatPadding="true" />
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <!--The nav drawer-->
+    <RelativeLayout
+        android:id="@+id/drawerPane_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_main"
+            fab:itemTextColor="#000000"
+            fab:menu="@menu/main_activity_drawer_menu"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

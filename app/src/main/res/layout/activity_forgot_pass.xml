@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/coordinator_layout"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent"
+                                                 tools:context="edu_chat.android.com.edu_chat.controller.forgotpassword.Forgotpassword">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/signup">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:src="@drawable/black_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/logo_white"
+                android:maxHeight="90dp"
+                android:maxWidth="180dp"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="@string/forgot_password_hint"
+                android:textColor="@color/White"
+                />
+
+            <EditText
+                android:id="@+id/email_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_action_navigation_close_inverted"
+                android:hint="@string/school_email_address"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/White"
+                android:textColorHint="@color/White"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/orange_button_background"
+                android:focusable="true"
+                android:text="@string/submit"
+                android:textColor="@color/White"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Larger circle border -->
+    <!--<item>-->
+    <!--<shape android:shape="oval">-->
+    <!--<solid android:color="#fff"/>-->
+    <!--<size-->
+    <!--android:width="16dp"-->
+    <!--android:height="16dp"/>-->
+    <!--</shape>-->
+    <!--</item>-->
+
+    <!-- Smaller red circle -->
+    <item android:id="@+id/unreadShape">
+        <shape android:shape="oval">
+            <!-- transparent stroke = larger_circle_size - smaller_circle_size -->
+            <stroke
+                android:width="5dp"
+                android:color="@android:color/transparent"/>
+            <solid android:color="#FE8E38"/>
+            <size
+                android:width="12dp"
+                android:height="12dp"/>
+        </shape>
+    </item>
+</layer-list>

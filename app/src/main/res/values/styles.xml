@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="header_color_new_design" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/header_new_color</item>
+        <item name="colorPrimaryDark">@color/Header</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/White</item>
+        <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_layout</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="menu_labels_style">
+        <!---<item name="android:background">@drawable/fab_label_background</item>-->
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="TextAppearance.NavView" parent="Base.TextAppearance.AppCompat">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="LightToolbar" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">#FFFFFF</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_animation_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_animation_exit</item>
+    </style>
+
+    <style name="MyTabStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light"/>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="settings_notifications_switch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#79B473</item>
+
+    </style>
+
+    <style name="settings_dialog" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#0F5C80</item>
+        <item name="colorControlActivated">#0F5C80</item>
+        <item name="colorControlHighlight">#0F5C80</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">@color/header_new_color</item>
+    </style>
+
+    <style name="check_mark" parent="Theme.AppCompat">
+        <item name="colorAccent">#549788</item>
+        <item name="android:textColorSecondary">#7F7F7F</item>
+    </style>
+
+</resources>

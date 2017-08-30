@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/invite_recycler_view_style4"
+        android:paddingBottom="10px"
+        android:paddingLeft="0px"
+        android:paddingRight="10px"
+        android:paddingTop="10px">
+
+        <TextView
+            android:id="@+id/name_selected_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Username"/>
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/instabug_ic_remove"/>
+    </LinearLayout>
+</LinearLayout>

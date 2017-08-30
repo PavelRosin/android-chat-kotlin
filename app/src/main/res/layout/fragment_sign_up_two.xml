@@ -1,0 +1,106 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="edu_chat.android.com.edu_chat.controller.signup.SignUpTwoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/fragmentTwoSU"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/school_auto_complete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:completionHintView="@drawable/sign_up_option_border"
+                android:completionThreshold="1"
+                android:dropDownSelector="@drawable/sign_up_option_border"
+                android:hint="@string/university_school"
+                android:inputType="textAutoComplete"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:textColorHint="#B2FFFFFF"
+                >
+
+            </AutoCompleteTextView>
+
+            <EditText
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/first_name"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:textColorHint="#B2FFFFFF"/>
+
+            <EditText
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/last_name"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:textColorHint="#B2FFFFFF"/>
+
+            <EditText
+                android:id="@+id/school_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/school_email_address"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:textColorHint="#B2FFFFFF"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/Black"
+                android:textColorHint="#B2FFFFFF"/>
+
+            <EditText
+                android:id="@+id/confrimpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="@string/confirmpassword"
+                android:inputType="textPassword"
+                android:textColor="@color/White"
+                android:textColorHint="#B2FFFFFF"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/sign_up_claim"
+                android:textColor="@color/White"/>
+
+            <Button
+                android:id="@+id/go_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_button_background"
+                android:gravity="center|center_vertical"
+                android:padding="10dp"
+                android:text="@string/goforward"
+                android:textColor="@color/White"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
